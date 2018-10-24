@@ -1,4 +1,4 @@
-package scrollphathd
+package scrollphat
 
 import "fmt"
 

@@ -1,4 +1,4 @@
-package scrollphathd
+package scrollphat
 
 // TODO: Implement text and graphing methods for parity with Python lib
 

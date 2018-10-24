@@ -1,4 +1,4 @@
-package scrollphathd
+package scrollphat
 
 // resetBuffer will clear and recreate the buffer with the device's width and height.
 func (d *Display) resetBuffer() {

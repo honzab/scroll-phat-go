@@ -1,4 +1,4 @@
-package scrollphathd
+package scrollphat
 
 import (
 	"periph.io/x/periph/conn/i2c"
@@ -15,7 +15,7 @@ import (
 //	)
 //	_, _ := host.Init()
 //	bus, _ := i2creg.Open("1")
-//	display, _ := scrollphathd.New(bus)
+//	display, _ := scrollphat.New(bus)
 //
 func New(bus i2c.Bus, opts ...DisplayOption) (*Display, error) {
 	device, err := NewDriver(bus)

@@ -1,4 +1,4 @@
-package scrollphathd
+package scrollphat
 
 // DisplayOption allows specifying behavior for the display.
 type DisplayOption func(*displayOptions)

@@ -1,5 +1,5 @@
 /*
-Package scrollphathd provides a helper library for interacting with a Pimoroni Scroll pHAT HD device:
+Package scrollphat provides a helper library for interacting with a Pimoroni Scroll pHAT HD device:
 
 https://shop.pimoroni.com/products/scroll-phat-hd
 
@@ -15,4 +15,4 @@ drawing functionality such as SetPixel, SetBrightness, and supports rotation. It
 directly in your projects. This can be particularly useful in performance-critical situations where you want
 to incur minimum overhead.
 */
-package scrollphathd
+package scrollphat
