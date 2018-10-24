@@ -5,7 +5,7 @@ const (
 	devHeight = 7
 
 	// I2C hardware address.
-	addr uint16 = 0x74
+	addr uint16 = 0x60
 
 	// Some constants are not used - commented
 	regMode  byte = 0x00
@@ -52,3 +52,5 @@ var (
 		222, 224, 227, 229, 231, 233, 235, 237, 239, 241, 244, 246, 248, 250, 252, 255,
 	}
 )
+
+const Addr = addr
