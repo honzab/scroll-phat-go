@@ -1,8 +1,8 @@
 package scrollphat
 
 const (
-	devWidth  = 17
-	devHeight = 7
+	devWidth  = 11
+	devHeight = 5
 
 	// I2C hardware address.
 	addr uint16 = 0x60
