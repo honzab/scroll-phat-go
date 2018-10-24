@@ -3,7 +3,7 @@ package scrollphat_test
 import (
 	"testing"
 
-	"github.com/tomnz/scroll-phat-hd-go"
+	"github.com/honzab/scroll-phat-go"
 )
 
 func TestDisplay_Basic(t *testing.T) {

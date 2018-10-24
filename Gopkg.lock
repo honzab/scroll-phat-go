@@ -2,14 +2,29 @@
 
 
 [[projects]]
+  digest = "1:54dac8f305ba8b64cfe001ee5022734f21f2fc8c78ff2477d8cebbf39823239d"
   name = "periph.io/x/periph"
-  packages = ["conn","conn/gpio","conn/i2c","conn/pin","devices"]
-  revision = "687bb43ba5ad417371dc0d1a1f7189119aafcede"
-  version = "v2.0.0"
+  packages = [
+    "conn",
+    "conn/conntest",
+    "conn/gpio",
+    "conn/i2c",
+    "conn/i2c/i2ctest",
+    "conn/pin",
+    "devices",
+  ]
+  pruneopts = ""
+  revision = "c0de80b1b075a2019fced09524f2318cf690a685"
+  version = "v2.3.0"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "2a0d271f57db1cbfcbf64ff5412f0e8258b10d89cd2e6980590a43a27ad89f24"
+  input-imports = [
+    "periph.io/x/periph/conn",
+    "periph.io/x/periph/conn/i2c",
+    "periph.io/x/periph/conn/i2c/i2ctest",
+    "periph.io/x/periph/devices",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
