@@ -19,11 +19,12 @@ const (
 	regShutdown byte = 0x0a
 	// regGain      byte = 0x0b
 	// regAdc       byte = 0x0c
+	regBrightness = 0x19
 
 	configBank byte = 0x0b
 	bankAddr   byte = 0xfd
 
-	modePicture byte = 0x00
+	modePicture byte = 0x03
 	// modeAutoplay  byte = 0x08
 	// modeAudioplay byte = 0x18
 

@@ -158,7 +158,8 @@ func (s *Driver) Show() error {
 
 // scaleVal applies brightness to the given value.
 func (s *Driver) scaleVal(val byte) byte {
-	return byte(uint16(val) * uint16(s.brightness) / 255)
+	// return byte(uint16(val) * uint16(s.brightness) / 255)
+	return s.brightness
 }
 
 // pixelAddr maps an x, y coordinate to the physical LED index that should be updated, after rotating
@@ -201,10 +202,13 @@ func (s *Driver) setup() error {
 	if err := s.writeRegister(regAudioSync, 0); err != nil {
 		return err
 	}
+	if err := s.writeRegister(regBrightness, 255); err != nil {
+		return err
+	}
 
 	// Need to "turn on" all of the LEDs with an enable bit in the frames
 	// that we are going to use
-	enableRows := make([]byte, 17)
+	enableRows := make([]byte, devWidth)
 	for i := range enableRows {
 		enableRows[i] = 255
 	}
